@@ -1,4 +1,4 @@
-name: CI webpage_button
+name: CI game
 
 on:
   push:
