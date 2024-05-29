@@ -252,7 +252,6 @@ void MainLogick()
     game->start();
     delete game;
     game = nullptr;
-    return 0;
 }
     
 
