@@ -21,6 +21,10 @@ jobs:
 
     - name: Build
       run: cmake --build ${{github.workspace}}/build  
+           cd example
+           cmake -B build
+           cmake --build build
+           build/game
   
     - name: Run tests
       run: build/check
