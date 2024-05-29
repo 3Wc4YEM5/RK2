@@ -20,7 +20,8 @@ jobs:
       run: cmake -H. -B ${{github.workspace}}/build -DBUILD_TESTS=ON
 
     - name: Build
-      run: | 
+      run: cmake --build ${{github.workspace}}/build 
+           | 
            cd src
            cmake -B build
            cmake --build build
