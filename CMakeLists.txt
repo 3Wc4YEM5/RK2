@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build tests" OFF)
 
 add_library(src STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+add_library(src STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/game.cpp)
 target_include_directories(src PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 
