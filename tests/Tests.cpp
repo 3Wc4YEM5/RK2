@@ -34,3 +34,12 @@ TEST(FactoryTest, CreateAgents) {
   EXPECT_TRUE(dynamic_cast<Gift*>(gift));
   EXPECT_TRUE(dynamic_cast<Life*>(life));
 }
+
+TEST(GameTest, MainLogick) {
+    Game* game = new Game();
+    game->start();
+    // Дополнительные проверки, если необходимо
+    delete game;
+    game = nullptr;
+    SUCCEED();  // Успешное выполнение теста, если не было сбоев
+}
